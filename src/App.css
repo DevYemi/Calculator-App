@@ -1,38 +1,156 @@
-.App {
+html {
+  width: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-image: url('/img/img1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/**************
+Header STLYES*********/
+
+header {
+  width: 100%;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* padding: 20px; */
+  background-color: #000000;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+img {
+  width: 100px;
+  height: 100px;
+  transform: rotate(20deg);
+  display: inline-block;
+  margin-bottom: 1em;
+}
+#header-container {
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid rgb(255, 255, 255); */
+  max-width: 500px;
+  margin: auto;
+  padding: 10px 0 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+header p:nth-child(2){
+  font-style: italic;
+  margin-top: -17px;
+}
+/* header p:nth-child(3){
+  /* margin-top: -17px; 
+} */
+
+  @media (max-width: 650px) {
+      #header-container {
+          /* border: 1px solid black; */
+          margin: auto;
+          padding: 10px 0 10px 0;
+          display: block;
+          max-width: 100%;
+          font-size: 1rem;
+      }
+      img{
+          margin-bottom: -1em;
+      }
+      
   }
-  to {
-    transform: rotate(360deg);
+/******** MAIN LAYOUT  *********/
+
+#container{
+max-width: 700px;
+margin: auto;
+height: 100%;
+/* border: 1px solid black; */
+margin-top: 7em;
+color: white;
+}
+
+#screen{
+  border: 2px solid #000000;
+  height: 6em;
+  border-radius: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+}
+#screen p {
+  font-size: 1.5rem;
+  margin: 0;
+  
+}
+#screen-input{
+  /* border: 1px solid black; */
+  padding: .70rem
+
+}
+#screen-result {
+  /* border: 1px solid black; */
+  padding-top: 2em;
+  padding-right: .75em;
+}
+.input{
+  display: flex;
+  justify-content: space-between;
+  font-size: 2em;
+  margin-top: 1em;
+
+}
+#digits{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 62%;
+  /* border: 1px solid black; */
+}
+
+#operator-signs {
+  display: grid;
+  grid-template-columns: auto auto ;
+  width: 38%;
+  /* border: 1px solid black; */
+}
+
+button{
+  color: white;
+  font-size: 1.6rem;
+  background-color: black;
+  cursor: pointer;
+  padding: 20px;
+  text-align: center;
+}
+button:hover{
+  color: black;
+  font-size: 1.6rem;
+  background-color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0 10px 0;
+  font-size: 1.2rem;
+  background-color: rgb(255, 255, 254);
+  margin-top: 7px;
+  font-family: 'Ubuntu', sans-serif;
+}
+@media (max-width: 650px) {
+  #screen p {
+      font-size: 1.2rem;
+  }
+
+  .input {
+      font-size: 1rem;
+  }
+  /* .items {
+      padding: 10px 0 10px 0;
+   }   */
+ button {
+      padding: 10px 0 10px 0;
   }
 }
