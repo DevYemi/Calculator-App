@@ -1,0 +1,5 @@
+Handle Dot input
+
+check if input is a dot and run HandleDot
+check if currentDigitInput alreday have a dot if true return, if not continue running
+ 

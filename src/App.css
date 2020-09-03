@@ -73,28 +73,34 @@ color: white;
 }
 
 #screen{
+  margin: auto;
+  background-color: #000000b2;
   border: 2px solid #000000;
-  height: 6em;
+  height: 7em;
   border-radius: 25px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
   width: 98%;
 }
 #screen p {
-  font-size: 1.5rem;
   margin: 0;
   
 }
 #screen-input{
-  /* border: 1px solid black; */
-  padding: .70rem
+  color: #a59c9c;
+  font-size: large !important;
+  padding: .70rem;
+  text-align: right;
 
 }
+#logical-sign{
+  font-size: small !important;
+  padding-left: 10px;
+}
 #screen-result {
-  /* border: 1px solid black; */
-  padding-top: 2em;
-  padding-right: .75em;
+  font-size: 2em;
+  text-align: right;
+  padding: .70rem;
+  /* padding-top: 1.5em; */
 }
 .input{
   display: flex;
@@ -140,16 +146,20 @@ footer {
   font-family: 'Ubuntu', sans-serif;
 }
 @media (max-width: 650px) {
-  #screen p {
-      font-size: 1.2rem;
+  #screen-input{
+    font-size: large !important;
+  
   }
+  #logical-sign{
+    font-size: small !important;
+  }
+  /* #screen  p {
+      font-size: 2rem;
+  } */
 
   .input {
       font-size: 1rem;
   }
-  /* .items {
-      padding: 10px 0 10px 0;
-   }   */
  button {
       padding: 10px 0 10px 0;
   }
